@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <section class="greeting">
+        <form id="new-todo-form">
+            <input type="text" name="content" id="content" placeholder="Introduce tu tarea aquí"/>
+            <button onclick="addTask()" class="save">Añadir</button>
+        
+            <h3>Escoge una categoría</h3>
+            <div id="options">
+                <label>
+                    <input type="radio" name="category" id="category1" value="Casa"/>
+                    <span>Casa</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="category" id="category2" value="Trabajo"/>
+                    <span>Trabajo</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="category" id="category3" value="Estudio"/>
+                    <span>Estudios</span>
+                </label>
+            </div>
+            <input type="submit" class="submit" value="Añadir tarea"/>
+        </form>
+    </section> 
+    <section class="todo-list">
+        <h3>Lista de Tareas</h3>
+        <div class="list" id="todo-list">
+            <div class="todo-item">
+                <label>
+                    <input type="checkbox" />
+                    <span class="casa"></span>
+                </label>
+                <div class="todo-content">
+                    <input type="text" value=" " readonly />
+                </div>
+                <div class="actions">
+                    <button class="edit">Editar</button>
+                    <button class="delete">Eliminar</button>
+                </div>
+            </div>
+
+            <div class="todo-item">
+                <label>
+                    <input type="checkbox" />
+                    <span class="trabajo"></span>
+                </label>
+                <div class="todo-content">
+                    <input type="text" value=" " readonly />
+                </div>
+                <div class="actions">
+                    <button class="edit">Editar</button>
+                    <button class="delete">Eliminar</button>
+                </div>
+            </div>
+
+            <div class="todo-item">
+                <label>
+                    <input type="checkbox" />
+                    <span class="estudios"></span>
+                </label>
+                <div class="todo-content">
+                    <input type="text" value=" " readonly />
+                </div>
+                <div class="actions">
+                    <button class="edit">Editar</button>
+                    <button class="delete">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <script src="./script.js"></script>
+</body>
+</html>
